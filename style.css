@@ -1,0 +1,172 @@
+*
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+:root
+{
+  --primary-text-color:#183b56;
+  --secondary-text-color:#577592;
+  --accent-color:#2294ed;
+  --accent-color-dark:#1d69a3;
+}
+
+body{
+    color: var(--primary-text-color);
+}
+p{
+   color: var(--secondary-text-color);
+   line-height: 1.4rem;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.flex
+{
+    display:flex;
+    align-items: center;
+}
+.container
+{
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+nav{
+    background-color: #f3faff;
+    box-shadow: 0 0 4px #bbd0e2;
+    position: fixed;
+    z-index: 99;
+    top:0;
+    left: 0;
+    right: 0;
+
+}
+.main-nav
+{
+    justify-content: space-between;
+    padding-block: 8px;
+    position: relative;
+}
+.nav-links ul
+{
+    gap:14px;
+    font-weight:bolder;
+}
+.nav-toggle
+{
+    display: none;
+}
+.hover-link
+{
+    cursor: pointer;
+}
+.hover-link:hover
+{
+    color: var(--secondary-text-color);
+}
+
+.hover-link:active
+{
+    color: red;
+}
+
+.nav-item.active
+{
+  color: var(--accent-color);
+}
+.search-bar
+{
+    height: 32px;
+    gap:8px;
+}
+.news-input
+{
+    weight:300px;
+    height: 100%;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border: 2px solid #bbd0e2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.search-button
+{
+    background-color: var(--accent-color);
+    color:white;
+    padding: 8px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.search-bar2
+{
+    margin-top: 150px;
+    margin-left: 10px;
+    height: 32px;
+    gap:8px;
+
+}
+.search-nav
+{
+    width: 100%;
+}
+.search-button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+.card-container
+{
+    padding-block: 20px;
+    margin-top: 150px;
+    justify-content: space-between;
+    flex-wrap: wrap ;
+    row-gap: 20px;
+    align-items: start;
+}
+
+.card
+{
+    width: 380px;
+    min-height: scroll-height;
+    box-shadow: 0 0 4px #d4ecff;
+    cursor: pointer;
+    background-color: #ffff;
+    overflow: hidden;  
+    /* containt bahewr jayala nako */
+    transition: alt 0.3s ease;
+}
+
+.card:hover
+{
+    box-shadow: 1px 1px 8px #d4ecff;
+    background-color:#f9fdff ;
+    transform: translateY(-2px);
+
+}
+.card-header img
+{
+    width: 100%;
+    height:180px;
+    object-fit: cover; 
+    /* so that image can not cut */
+}
+.card-content
+{
+    padding:25px;
+}
+.news-source
+{
+    margin-block: 12px;
+}
+.search-nav
+{
+    background-color: #577592;
+    padding: 10px;
+}
